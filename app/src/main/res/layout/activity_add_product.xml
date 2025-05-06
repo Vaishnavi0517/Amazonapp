@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    android:padding="10dp"
+    tools:context=".MenuFiles.AddProductActivity">
+
+    <android.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#E453AEF6"
+        android:id="@+id/addtoolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/back"
+                android:id="@+id/addProductBack"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Add a Product"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-condensed-medium"/>
+
+
+        </LinearLayout>
+
+
+
+    </android.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/addtoolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/addproduct"
+                android:id="@+id/addProductImg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Name of the Product"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addProductName"
+                android:hint="Enter Product Name"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:background="@drawable/edittextshape"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Unit Price of the Product(in ₹)"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addProductPrice"
+                android:hint="Enter Price"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:background="@drawable/edittextshape"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text = "Description of the Product"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addProductDescription"
+                android:hint="Enter Product Description"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:textSize="12sp"
+                android:background="@drawable/edittextshape"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Category of the Product"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/addProductCategory"
+                android:hint="Enter Category"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:background="@drawable/edittextshape"/>
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/confirmAddProduct"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:text="Confirm"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif"
+                android:background="@drawable/button_logout_shape"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

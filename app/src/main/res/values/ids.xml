@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="categoryImage" type="id" />
+    <item name="categoryName" type="id" />
+    <item name="locationTextView" type="id" />
+</resources>

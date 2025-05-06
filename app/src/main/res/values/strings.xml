@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">amazonapp</string>
+    <string name="add_a_product">Add a Product</string>
+    <string name="enable_face_amp_fingerprint_login"><![CDATA[Enable Face & Fingerprint Login]]></string>
+</resources>
